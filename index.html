@@ -22,12 +22,12 @@
 		content="Nina Carducci, photographe passionnée. Disponible sur Bordeaux pour vos shooting photo.">
 	<meta name="twitter:image" content="https://quentinmouton.github.io/P5/assets/images/ninaMeta.webp">
 
-	<link rel=" stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<title>Nina Carducci - Photographe, Bor</title>
+	<title>Nina Carducci - Photographe, Bordeaux</title>
 </head>
 
 <body>
@@ -225,21 +225,27 @@
 			"telephone": "05 56 67 78 89",
 			"url": "https://quentinmouton.github.io/P5/",
 			"address": {
-			"@type": "PostalAddress",
-			"addressLocality": "Bordeaux",
-			"addressRegion": "Girondes",
-			"postalCode": "33200",
-			"streetAddress": "68 avenue Alsace-Lorraine",
-			"addressCountry": "FR"
+				"@type": "PostalAddress",
+				"addressLocality": "Bordeaux",
+				"addressRegion": "Girondes",
+				"postalCode": "33200",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressCountry": "FR"
 		  	},
-		  	"openingHours": [
-				"Mo-Fr 10:00-19:00"
-		 	],
-		  	"priceRange": {
-				"minPrice": 50,
-		  		"maxPrice": 400,
-		 		"currency": "EUR"
-			}
+            "openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday",
+						"Friday"
+					],
+					"opens": "10:00",
+					"closes": "19:00"
+				}
+			]
 		}
 		</script>
 </body>
